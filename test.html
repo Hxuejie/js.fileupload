@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form id="form" action="http://localhost:8080/file/upload" enctype="multipart/form-data" target="test-ifr" method="post">
+		<input type="file" name="file">
+	</form>
+	<button id="button">点击上传</button>
+
+
+<script type="text/javascript" src="daer.common.js"></script>
+<script type="text/javascript">
+	fileUpload('button','form',function(result){
+		alert(result);
+	});
+
+</script>
+</body>
+</html>
